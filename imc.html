@@ -1,9 +1,22 @@
 <!DOCTYPE html> <!-- indica que é documento HTML5-->
-<html> <!-- elemento raiz -->
+<html lang="pt-br"> <!-- elemento raiz -->
     <head> <!-- cabeçalho -->
-
+        <meta charset="utf-8"/> <!-- sistema de codificação permite acentos, cecidilha-->
+        <title> Calculadora do IMC </title> <!-- título da aba -->
+        <link href="imc.css" rel="stylesheet">
+        <script src="imc.js"> </script>
     </head>
     <body> <!-- corpo -->
-
+        <div id="divGeral"> <!-- divisão de área -->
+            <div id="divPeso">
+                Informe seu peso <input type="number" id="peso">
+            </div>
+            <div id="divAltura">
+                Informe sua altura <input type="number" id="altura">
+            </div>
+            <div id="divBotao">
+                <button onClick="calculaImc()"> Calcular IMC </button>
+            </div>
+        </div>
     </body>
 </html>
