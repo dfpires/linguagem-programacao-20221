@@ -1,0 +1,17 @@
+body{
+    background-color: aqua;
+    width: 400px;
+    margin: auto;
+    padding-top: 50px;
+    color: green;
+}
+
+div {
+    padding-bottom: 30px;
+}
+
+#divGeral {
+    background-color: white;
+    border-radius: 15px;
+    padding:20px;
+}

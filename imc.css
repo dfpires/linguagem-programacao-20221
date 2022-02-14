@@ -1,8 +1,8 @@
 body {
     background-color: aqua;
     width: 400px; /* largura da página */
-    padding-left: 150px; /* espaçamento interno à esquerda */ 
-    padding-top: 50px; /* espaçamento interno acima */
+    margin: auto;
+    padding-top: 50px;
 }
 
 div {
