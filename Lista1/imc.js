@@ -8,18 +8,18 @@ function calculaImc(){
     // mostra o resultado para o usuário
     document.getElementById("imc").innerHTML = "O IMC é " + imc.toFixed(2) // duas casas depois da vírgula
     if (imc < 18.5){
-        alert("Magreza")
+        document.getElementById("tipo").innerHTML = "Magreza"
     }
     else if ((imc >= 18.5) && (imc < 25)){
-        alert("Normal")
+        document.getElementById("tipo").innerHTML = ("Normal")
     }
     else if ((imc >=25) && (imc < 30)) {
-        alert("Sobrepeso")
+        document.getElementById("tipo").innerHTML = ("Sobrepeso")
     }
     else if ((imc >= 30) && (imc < 40)){
-        alert("Obesidade")
+        document.getElementById("tipo").innerHTML = ("Obesidade")
     }
     else {
-        alert("Obesidade grave")
+        document.getElementById("tipo").innerHTML = ("Obesidade grave")
     }
 }
