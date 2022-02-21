@@ -1,0 +1,19 @@
+body {
+    width: 400px;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+h2 {
+    padding-top: 20px;
+}
+div {
+    padding-bottom: 20px;
+}
+
+#container {
+    margin-top: 40px;
+    border-radius: 30px;
+    background-color: brown;
+    padding: 10px;
+}
