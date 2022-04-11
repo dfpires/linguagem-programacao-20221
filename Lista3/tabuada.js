@@ -4,7 +4,7 @@ function  calcular(){
     let i = 0
     let saida = ""
     while (i<=10){
-        saida += "<br/> " + numero + " x " + i + " = " + (numero*i)
+        saida = saida + "<br/> " + numero + " x " + i + " = " + (numero*i)
         i++
     }
     document.getElementById("saida").innerHTML = saida
