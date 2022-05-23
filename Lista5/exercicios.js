@@ -110,3 +110,47 @@ function exe6(){
     }
     document.getElementById("result6").innerHTML = result
 }
+
+function extra(){
+    // declarando os vetores
+    let vetCarros = []
+    let vetClientes = []
+    let codCliente = Number(prompt(`Informe código do cliente dono do carro`))
+    do {
+        let objetoCarro = new Object()
+        objetoCarro.codCliente = codCliente
+        objetoCarro.marca = prompt(`Informe marca do carro`)
+        objetoCarro.modelo = prompt(`Informe modelo do carro`)
+        objetoCarro.placa = prompt(`Informe placa do carro`)
+        let achou = false // não encontrou o cliente cadastrado
+        for(let i=0;i<vetClientes.length;i++){
+            if (vetClientes[i].codCliente == codCliente){
+                achou = true
+                break // pára de procurar
+            }
+        }
+        if (!achou){
+            let objetoCliente = new Object()
+            objetoCliente.codCliente = codCliente
+            objetoCliente.nome = prompt(`Informe nome do cliente`)
+            objetoCliente.cpf = prompt(`Informe cpf do cliente`)
+            vetClientes.push(objetoCliente) // insere no vetor de clientes
+            alert(`Cliente inserido com sucesso`)
+        }
+        vetCarros.push(objetoCarro) // insere no vetor de carros
+        alert(`Carro inserido com sucesso`)
+        codCliente = Number(prompt(`Informe novo código do cliente. Digite 0 para encerrar`))
+ 
+    }
+    while(codCliente != 0)
+    let result = "" 
+    for(let i=0;i < vetCarros.length;i++){
+        result += `Cod Cliente: ${vetCarros[i].codCliente} Marca: ${vetCarros[i].marca}, Modelo ${vetCarros[i].modelo} <br/>`
+    }
+    document.getElementById("resultExtra").innerHTML = result
+}
+
+
+
+
+
